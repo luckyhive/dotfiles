@@ -4,3 +4,8 @@ alias ls='ls -la'
 alias resource="source $HOME/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles/ --work-tree=$HOME'
 
+
+## git
+alias gst='git status'
+alias gcm='git commit -m '
+alias gadd='git add '
