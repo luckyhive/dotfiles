@@ -1,7 +1,5 @@
-#!/bin/sh
-
 alias ls='ls -la'
-alias resource="source $HOME/.zshrc"
+alias resource="source $HOME/.config/zsh/.zshrc"
 alias config='/usr/bin/git --git-dir=$HOME/git/dotfiles/ --work-tree=$HOME'
 
 
