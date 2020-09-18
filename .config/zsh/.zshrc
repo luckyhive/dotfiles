@@ -8,7 +8,9 @@ export EDITOR=vim
 ## 
 ## install zsh plugins 
 ##
-source $HOME/.config/zsh/ohmyzsh/lib/git.zsh
+for i ($HOME/.config/zsh/ohmyzsh/lib/*.zsh); do
+	source $i
+done
 source $HOME/.config/zsh/ohmyzsh/plugins/shrink-path/shrink-path.plugin.zsh
 source $HOME/.config/zsh/ohmyzsh/plugins/command-not-found/command-not-found.plugin.zsh
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
