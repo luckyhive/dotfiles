@@ -4,6 +4,7 @@
 
 load_plugin "https://github.com/zsh-users/zsh-syntax-highlighting.git" zsh-syntax-highlighting "used for syntax highlighting"
 
+. $ZDOTDIR/shrink-path.zsh
 . $ZDOTDIR/completions.zsh
 . $ZDOTDIR/gitprompt.zsh
 . $ZDOTDIR/prompt.zsh

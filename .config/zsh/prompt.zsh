@@ -2,7 +2,7 @@ autoload colors; colors;
 setopt prompt_subst
 
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+PROMPT+=' %{$fg[cyan]%}$(shrink_path -f)%{$reset_color%} $(git_prompt_info)'
 
 RPROMPT="%F{008}%~ %T%f"
 	
