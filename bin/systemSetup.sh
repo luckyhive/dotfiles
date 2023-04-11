@@ -56,3 +56,11 @@ ALACRITTY_THEMES_REPO="https://github.com/rajasegar/alacritty-themes.git"
 	git clone "$ALACRITTY_THEMES_REPO" "$ALACRITTY_THEMES_DIR"
 )
 
+# install tmux plugins
+TMUX_PLUGINS_FOLDER=$HOME/.config/tmux/plugins
+[ ! -d "$TMUX_PLUGINS_FOLDER" ] && (
+	echo "installing tmux plugins"
+	mkdir -p "$TMUX_PLUGINS_FOLDER"
+	git clone https://github.com/tmux-plugins/tpm $TMUX_PLUGINS_FOLDER/tpm
+)
+
