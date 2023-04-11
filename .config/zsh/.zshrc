@@ -11,3 +11,4 @@ load_plugin "https://github.com/zsh-users/zsh-syntax-highlighting.git" zsh-synta
 . $ZDOTDIR/aliases.zsh
 . $ZDOTDIR/history.zsh
 
+eval "$(ssh-agent -s)"
